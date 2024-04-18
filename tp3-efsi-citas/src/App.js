@@ -1,17 +1,9 @@
 
-import logo from './logo.svg';
 import './App.css';
+import { Cita } from './components/Cita/Cita';
 
 function App() {
-  // Function to handle form submission
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Logic to handle form submission and create new appointment
-  };
-
-  return (
-    <div className="App">
-      <div id="root">
+  return (<>
         <h1>ADMINISTRADOR DE PACIENTES</h1>
         <div class="container">
           <div class="row">
@@ -56,12 +48,11 @@ function App() {
               <p>Sintomas: <span>No está comiendo</span></p>
               <button class="button elimnar u-full-width">Eliminar ×</button>
             </div>
-
+            <Cita mascota="Pipa" />
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </>
   );
 }
 
